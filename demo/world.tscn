@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://cjpigp1c7y5c7"]
+
+[ext_resource type="PackedScene" uid="uid://ctr7sx5otsygk" path="res://demo/models/demo_grounds.tscn" id="1_50jbj"]
+
+[sub_resource type="Environment" id="Environment_titps"]
+background_mode = 1
+background_color = Color(0.817521, 0.817521, 0.817521, 1)
+
+[node name="World" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_titps")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.258819, -0.683013, 0.683013, 0, 0.707107, 0.707107, -0.965926, -0.183013, 0.183013, 0, 23, 0)
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.939693, -0.116978, 0.321394, 0, 0.939693, 0.34202, -0.34202, -0.321394, 0.883022, 15.51, 13.84, 21.585)
+
+[node name="demo_grounds" parent="." instance=ExtResource("1_50jbj")]
+
+[node name="objects" type="Node3D" parent="."]
