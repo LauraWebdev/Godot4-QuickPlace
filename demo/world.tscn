@@ -17,6 +17,7 @@ shadow_enabled = true
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(0.939693, -0.116978, 0.321394, 0, 0.939693, 0.34202, -0.34202, -0.321394, 0.883022, 15.51, 13.84, 21.585)
+current = true
 
 [node name="demo_grounds" parent="." instance=ExtResource("1_50jbj")]
 
